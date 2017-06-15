@@ -1,3 +1,10 @@
+@keyframes glowOrange {
+  0% {
+    text-shadow: 0px 0px 10px #fd9429; }
+  50% {
+    text-shadow: 0px 0px 20px #feba75; }
+  100% {
+    text-shadow: 0px 0px 10px #fd9429; } }
 * {
   box-sizing: border-box; }
 
@@ -36,7 +43,9 @@ body {
       top: 0;
       color: #feba75;
       font-size: 15vw;
-      font-family: 'Bubbler One', sans-serif; }
+      font-family: 'Bubbler One', sans-serif;
+      animation: glowOrange 6s;
+      animation-iteration-count: infinite; }
     .screen.one .text {
       font-family: 'Inconsolata', sans-serif;
       display: flex;
