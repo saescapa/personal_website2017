@@ -151,8 +151,89 @@ body {
     }
   }
   &.two {
-    .description {
-      font-family: 'Cabin', sans-serif;
+    font-family: 'Cabin', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    position: relative;
+    .descriptions {
+      position: absolute;
+      display: none;
+      text-align: center;
+      .backbutton {
+        display: inline-block;
+        margin: 0 auto;
+        width: 150px;
+        padding: 5px;
+        margin: 20px;
+        color: black;
+        background-color: white;
+        transition: 0.2s all;
+        &:hover {
+          color: white;
+          background-color: rgba(0,0,0,0.1);
+        }
+      }
+      .description {
+        display: none;
+        width: 60%;
+        margin: 0 auto;
+        text-align: left;
+        color: white;
+        &.active {
+          display: block;
+        }
+      }
+    }
+    .center {
+      flex: 100px;
+      text-align: center;
+      color: white;
+      div {
+        background-color: white;
+        color: black;
+        padding: 5px;
+        margin: 7px;
+        display: inline-block;
+        transition: 0.2s all;
+        &:hover {
+          color: white;
+          background-color: rgba(0,0,0,0.1);
+        }
+      }
+    }
+    .left, .right {
+      flex: auto;
+      padding: 10px;
+      text-align: center;
+      display: flex;
+      .country {
+        color: white;
+        padding-top: 20px;
+      }
+      .image {
+        flex: 20vw;
+        transition: 0.5s all;
+        &:hover {
+          img {
+            width: 23vw;
+          }
+        }
+        img {
+          width: 20vw;
+          height: auto;
+          transition: 0.5s all;
+          opacity: 1;
+        }
+        &.exit {
+          display: block;
+          opacity: 0;
+          img {
+            width: 30vw;
+          }
+        }
+      }
     }
   }
 }
