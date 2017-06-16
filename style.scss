@@ -34,6 +34,7 @@ body {
     z-index: 10;
     transition: all 1s;
     background-color: #2e2e2e;
+    opacity: 1;
     &.second {
       z-index: -1;
       .hola {
@@ -165,6 +166,11 @@ body {
     align-items: center;
     flex-wrap: nowrap;
     position: relative;
+    opacity: 0;
+    transition: all 1s;
+    &.second {
+      opacity: 1;
+    }
     .descriptions {
       position: absolute;
       display: none;

@@ -31,7 +31,8 @@ body {
   .screen.one {
     z-index: 10;
     transition: all 1s;
-    background-color: #2e2e2e; }
+    background-color: #2e2e2e;
+    opacity: 1; }
     .screen.one.second {
       z-index: -1; }
       .screen.one.second .hola {
@@ -139,7 +140,11 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
-    position: relative; }
+    position: relative;
+    opacity: 0;
+    transition: all 1s; }
+    .screen.two.second {
+      opacity: 1; }
     .screen.two .descriptions {
       position: absolute;
       display: none;

@@ -2,10 +2,12 @@ $(document).ready(function() {
   $(".enter span").click(function() {
     $(".text").toggleClass("second");
     $(".screen.one").toggleClass("second");
+    $(".screen.two").toggleClass("second");
   });
   $(".goback").click(function() {
     $(".text").toggleClass("second");
     $(".screen.one").toggleClass("second");
+    $(".screen.two").toggleClass("second");
   })
   $(".image").click(function() {
     $(".center").hide();
