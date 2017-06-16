@@ -251,3 +251,14 @@ body {
     }
   }
 }
+
+.bottom {
+  position: fixed;
+  z-index: 999;
+  color: lightGrey;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  font-family: 'Cabin', sans-serif;
+  padding: 10px;
+}
